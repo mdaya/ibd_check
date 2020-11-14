@@ -1,4 +1,4 @@
-FROM images.sbgenomics.com/aleksandar_danicic/plink-2-0:0
+FROM images.sbgenomics.com/aleksandar_danicic/plink-1-90:0
 
 # Install scripts
 RUN mkdir /home/analyst
