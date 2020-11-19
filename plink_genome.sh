@@ -5,7 +5,7 @@ window_size=$2
 step_size=$3
 vif_threshold=$4
 
-plink_in_file=`sed 's/.bed//' $plink_bed_file`
+plink_in_file=`echo $plink_bed_file | sed 's/.bed//'`
 
 plink --bfile $plink_in_file \
    --indep $window_size $step_size $vif_threshold 
